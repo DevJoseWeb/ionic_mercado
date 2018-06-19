@@ -1,6 +1,6 @@
 Ionic + Firebase + API Java/SpringBoot 
 
-https://blu-mercado.firebaseapp.com
+https://galegao-blumenau.firebaseapp.com/
 
 git init
 

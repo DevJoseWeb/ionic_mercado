@@ -16,7 +16,7 @@ export class ProdutosPage {
   page : number = 0;
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public produtoService: ProdutoService,
     public loadingCtrl: LoadingController) {
@@ -53,7 +53,7 @@ export class ProdutosPage {
         },
         error => {});
     }
-  }  
+  }
 
   showDetail(produto_id : string) {
     this.navCtrl.push('ProdutoDetailPage', {produto_id: produto_id});
@@ -61,7 +61,7 @@ export class ProdutosPage {
 
   presentLoading() {
     let loader = this.loadingCtrl.create({
-      content: "Aguarde..."
+      content: "Calma estou buscando mais produtos..."
     });
     loader.present();
     return loader;

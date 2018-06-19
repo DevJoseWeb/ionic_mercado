@@ -1,6 +1,13 @@
-Ionic + Firebase + API Java/SpringBoot
+Ionic + Firebase + API Java/SpringBoot 
+
+https://blu-mercado.firebaseapp.com
+
 git init
+
 git add *
+
 git commit -m "comentários das alterações"
-git push origin master
+
 git remote add origin https://github.com/DevJoseWeb/ionic_mercado
+
+git push origin master

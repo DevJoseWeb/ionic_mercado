@@ -20,14 +20,14 @@ export class ProfilePage {
   cameraOn: boolean = false;
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public storage: StorageService,
     public clienteService: ClienteService,
     public camera: Camera,
     public sanitizer: DomSanitizer) {
 
-      this.profileImage = 'assets/imgs/avatar-blank.png';
+      this.profileImage = 'assets/imgs/avatar-blank.jpg';
   }
 
   ionViewDidLoad() {
@@ -50,7 +50,7 @@ export class ProfilePage {
     }
     else {
       this.navCtrl.setRoot('HomePage');
-    }    
+    }
   }
 
   getImageIfExists() {
@@ -63,7 +63,7 @@ export class ProfilePage {
       });
     },
     error => {
-      this.profileImage = 'assets/imgs/avatar-blank.png';
+      this.profileImage = 'assets/imgs/avatar-blank.jpg';
     });
   }
 
@@ -87,7 +87,7 @@ export class ProfilePage {
       encodingType: this.camera.EncodingType.PNG,
       mediaType: this.camera.MediaType.PICTURE
     }
-    
+
     this.camera.getPicture(options).then((imageData) => {
      this.picture = 'data:image/png;base64,' + imageData;
      this.cameraOn = false;
@@ -107,7 +107,7 @@ export class ProfilePage {
       encodingType: this.camera.EncodingType.PNG,
       mediaType: this.camera.MediaType.PICTURE
     }
-    
+
     this.camera.getPicture(options).then((imageData) => {
      this.picture = 'data:image/png;base64,' + imageData;
      this.cameraOn = false;

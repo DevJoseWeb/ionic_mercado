@@ -1,3 +1,6 @@
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/DevJoseWeb/ionic_mercado.svg)](https://greenkeeper.io/)
+
 Ionic + Firebase + API Java/SpringBoot 
 
 https://galegao-blumenau.firebaseapp.com/
